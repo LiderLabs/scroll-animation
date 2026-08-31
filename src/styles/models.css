@@ -1,0 +1,64 @@
+.models {
+  min-height: 100vh;
+
+  padding: 120px 7%;
+
+  background: #080808;
+}
+
+.models__heading p {
+  margin-bottom: 15px;
+
+  font-size: 0.75rem;
+  letter-spacing: 0.25em;
+
+  opacity: 0.5;
+}
+
+.models__heading h2 {
+  font-size: clamp(
+    3rem,
+    7vw,
+    6rem
+  );
+
+  letter-spacing: -0.05em;
+}
+
+.models__grid {
+  margin-top: 70px;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.model-card {
+  min-height: 450px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  padding: 30px;
+
+  border-radius: 20px;
+
+  background: #151515;
+}
+
+.model-card span {
+  opacity: 0.5;
+}
+
+.model-card h3 {
+  margin-top: 5px;
+
+  font-size: 2rem;
+}
+
+@media (max-width: 800px) {
+  .models__grid {
+    grid-template-columns: 1fr;
+  }
+}

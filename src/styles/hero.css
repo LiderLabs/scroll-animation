@@ -1,0 +1,105 @@
+.hero {
+  min-height: 100vh;
+
+  display: flex;
+  align-items: center;
+
+  padding: 120px 7% 80px;
+
+  background:
+    radial-gradient(
+      circle at center,
+      #242424 0%,
+      #0b0b0b 45%,
+      #050505 100%
+    );
+}
+
+.hero__content {
+  max-width: 950px;
+}
+
+.hero__eyebrow {
+  margin-bottom: 20px;
+
+  font-size: 0.75rem;
+  letter-spacing: 0.3em;
+
+  opacity: 0.65;
+}
+
+.hero h1 {
+  max-width: 900px;
+
+  font-size: clamp(
+    4rem,
+    10vw,
+    9rem
+  );
+
+  line-height: 0.85;
+  letter-spacing: -0.06em;
+
+  text-transform: uppercase;
+}
+
+.hero h1 span {
+  opacity: 0.35;
+}
+
+.hero__description {
+  max-width: 450px;
+
+  margin-top: 32px;
+
+  font-size: 1.1rem;
+  line-height: 1.6;
+
+  opacity: 0.65;
+}
+
+.hero button {
+  margin-top: 32px;
+
+  padding: 14px 24px;
+
+  border: none;
+  border-radius: 999px;
+
+  background: white;
+  color: black;
+}
+
+.hero {
+  position: relative;
+  overflow: hidden;
+}
+
+.hero__content {
+  will-change: transform, opacity;
+}
+
+.hero__scroll {
+  position: absolute;
+
+  right: 5%;
+  bottom: 40px;
+
+  display: flex;
+  align-items: center;
+  gap: 15px;
+
+  font-size: 0.7rem;
+
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+
+  opacity: 0.6;
+}
+
+.hero__scroll div {
+  width: 70px;
+  height: 1px;
+
+  background: currentColor;
+}
